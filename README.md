@@ -7,14 +7,14 @@ DISCLAIMER: i am not responsible for your files, a misuse of these scripts may o
 # 1. ALLtoMKV
 - it takes all video files in the current folder and "converts" them into mkv format files (no encoding, just container change) is useful if you want to make some order in your files list.
 - actual considered file formats are:
- - .avi 
- - .mp4 
- - .flv 
- - .mpg 
- - .mpeg 
- - .rmvb 
- - .ts 
- - .mov
+  - .avi 
+  - .mp4 
+  - .flv 
+  - .mpg 
+  - .mpeg 
+  - .rmvb 
+  - .ts 
+  - .mov
 
 the usage is just ``` ALLtoMKV ``` typed in your folder with an open command prompt if you have the script in your PATH, otherwise you have to copy it to your working folder to use it
 
