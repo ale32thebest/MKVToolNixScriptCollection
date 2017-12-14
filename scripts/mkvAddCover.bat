@@ -7,7 +7,7 @@ copy "cover.png" "REALLY_cover.png"
 copy "%%~nm.png" "cover.png"
 :: attrib -r :: removes read-only
 attrib -r %%m
-"C:\Program Files\MKVToolNix\mkvpropedit" "%%m" --add-attachment "cover.png" 
+mkvpropedit "%%m" --add-attachment "cover.png" 
 move "REALLY_cover.png" "cover.png"
 )
 
@@ -17,7 +17,7 @@ copy "cover.jpg" "REALLY_cover.jpg"
 copy "%%~nm.jpg" "cover.jpg"
 :: attrib -r :: removes read-only
 attrib -r %%m
-"C:\Program Files\MKVToolNix\mkvpropedit" "%%m" --add-attachment "cover.jpg" 
+mkvpropedit "%%m" --add-attachment "cover.jpg" 
 move "REALLY_cover.jpg" "cover.jpg"
 )
 
