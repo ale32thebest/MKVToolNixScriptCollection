@@ -1,4 +1,4 @@
-FOR %%A IN (*.avi *.mp4 *.flv *.mpg *.mpeg *rmvb *.ts *.mov ) DO "C:\Program Files\MKVToolNix\mkvmerge" -o "%%~nA.mkv" "%%~A"
+FOR %%A IN (*.avi *.mp4 *.flv *.mpg *.mpeg *.rmvb *.ts *.mov ) DO "C:\Program Files\MKVToolNix\mkvmerge" -o "%%~nA.mkv" "%%~A"
 
 ::"--language" "0:jpn" "--language" "1:ita"
 :: if added before "%%~A" you can set tracks language
