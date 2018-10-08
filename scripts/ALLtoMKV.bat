@@ -3,29 +3,29 @@
 ::we check if tee is available
 @WHERE tee> nul 2>&1
 if %ERRORLEVEL% NEQ 0 (
-echo.
-echo 	tee not found, please download tee and insert it in path or in this folder
-echo 	without tee i will use the old version of the script
-echo 	without warnings / error checks and autodelete of files
-echo 	you can find a good port online here http://unxutils.sourceforge.net/ 
-goto OLD_SCRIPT_WITH_NO_CHECKS_OR_DELETE
+	echo.
+	echo 	tee not found, please download tee and insert it in path or in this folder
+	echo 	without tee i will use the old version of the script
+	echo 	without warnings / error checks and autodelete of files
+	echo 	you can find a good port online here http://unxutils.sourceforge.net/ 
+	goto OLD_SCRIPT_WITH_NO_CHECKS_OR_DELETE
 )
 
 ::we check if mkvmerge is available
 @WHERE mkvmerge> nul 2>&1
 if %ERRORLEVEL% NEQ 0 (
-echo.
-echo 	mkvmerge not found, please download mkvmerge and insert it in path or in this folder
-echo 	without mkvmerge we cannot go on
-pause
-exit /b 1
+	echo.
+	echo 	mkvmerge not found, please download mkvmerge and insert it in path or in this folder
+	echo 	without mkvmerge we cannot go on
+	pause
+	exit /b 1
 )
 
 set /a processedFiles=0
 set /a inconteredErrors=0
 
 FOR %%A IN (*.avi *.mp4 *.flv *.mpg *.mpeg *.rmvb *.ts *.mov ) DO (
-echo.
+	echo.
 	set /a processedFiles+=1
 	mkvmerge -o "%%~nA.mkv" "%%~A" --ui-language en | tee "%%~A.log"
 	set /a somethingWrong=0
