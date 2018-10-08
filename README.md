@@ -4,7 +4,7 @@ a collection of simple windows (command prompt) scripts i currently use to manag
 DISCLAIMER: i am not responsible for your files, a misuse of these scripts may overwrite your media, pay attention when you type something, also keep in mind that these scripts work with the idea that the "MKVToolNix" software is installed on your machine and its executables are already added to your PATH variable, a simple google search for "how to add a folder to my windows path" may clarify if you are not familiar with these concept
 
 **Scripts List:**
-# 0 install.bat
+# 0. install.bat
 - you need MKVToolnix installed (should work on both 64/32bit, win7+, tested on win10/64bit) it needs admin privilege to check for your MKVToolNIx installation, add script files there and add everything to path
 - if you don't have MKVToolNIx installed you can download it from here: https://mkvtoolnix.download/downloads.html#windows
 
